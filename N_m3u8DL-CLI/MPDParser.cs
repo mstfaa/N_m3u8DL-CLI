@@ -506,7 +506,7 @@ namespace N_m3u8DL_CLI
             //排序
             formatList.Sort((a, b) =>
             {
-                return (a["Width"] + a["Height"]) * 1000 + a["Tbr"] > (b["Width"] + b["Height"]) * 1000 + b["Tbr"] ? -1 : 1;
+                return (a["Width"] + a["Height"]) * 1000 + a["Tbr"] > (b["Width"] + b["Height"]) * 1000 + b["Tbr"] ? -1 : 0;
             });
 
             //默认为最高码率的视频和音频
