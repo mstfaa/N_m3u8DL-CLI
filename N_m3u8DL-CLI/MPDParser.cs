@@ -519,7 +519,7 @@ namespace N_m3u8DL_CLI
                 if (f["ContentType"] == "audio" && !audioLangList.Contains(f["Language"])) audioLangList.Add(f["Language"]);
             });
 
-            if (audioLangList.Count > 1)
+            if (audioLangList.Count > 0)
             {
                 string Stringify(Dictionary<string, dynamic> f)
                 {
